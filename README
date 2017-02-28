@@ -1,0 +1,38 @@
+OVERVIEW
+========
+
+Connect 4 game for use by artificial intelligence programs.
+
+
+DEPENDENCIES
+============
+
+This project requires gradle to be installed in order to build and run.
+
+
+COMPILING
+=========
+
+Before building this project for the first time, gradle must be configured. The
+following command will set everything up properly.
+
+$ gradle wrapper
+
+Once this is done, subsequent builds can be completed using the gradle command.
+
+$ gradle build
+
+
+RUNNING
+=======
+
+The program is also run by the gradle command. I reccommend using the quiet flag
+-q in order to keep the output clean.
+
+$ gradle run -q
+
+
+CREDITS
+=======
+
+Written by Mason Fabel on 28 February 2017.

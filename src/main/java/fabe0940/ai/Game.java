@@ -284,7 +284,7 @@ public class Game implements Printable {
 				try {
 					move = Integer.parseInt(stdin.readLine());
 				} catch (Exception e) {
-					/* do nothing */
+					System.out.format("Unable to parse input\n");
 				}
 			}
 
@@ -293,6 +293,7 @@ public class Game implements Printable {
 			switch (board.getState()) {
 				case INVALID:
 					validMove = false;
+					System.out.format("Invalid move\n");
 					break;
 				case VALID:
 					turnState = nextTurn(turnState);
